@@ -2,6 +2,6 @@ function buyButton() {
     alert("Succesfully Bought!")
 }
 
-fucntion loveGiver() {
+function loveGiver() {
     alert("I LOVE YOU")
 }
