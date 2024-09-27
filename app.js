@@ -5,3 +5,7 @@ function buyButton() {
 function loveGiver() {
     alert("I LOVE YOU")
 }
+
+function test() {
+    
+}
