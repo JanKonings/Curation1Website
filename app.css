@@ -1,0 +1,244 @@
+
+body {
+    font-size: clamp(22px, 2vw, 40px);
+    font-family: cursive;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: auto;
+}
+
+.front_page_container {
+    display: flex;
+    justify-content: flex-start;  
+    align-items: center;   
+    flex-direction: column;    
+    height: 100vh;             
+    width: 100%;               
+    background-color: #ffffff;
+    padding-top: 8vh;
+}
+
+.front_page_container img {
+    width: clamp(200px, 30%, 250px);            
+    height: auto;         
+}
+
+h2 {
+    margin-top: 0.5vh;  
+}
+
+h3 {
+    font-size: clamp(23px, 2vw, 40px);
+    font-family: cursive;
+}
+
+h1 {
+    text-align: center;
+    font-size: clamp(14px, 1.4vw, 50px);
+}
+
+h4 {
+    margin-left: 0.5%;
+    font-size: clamp(15px, 1.4vw, 20px);
+}
+
+.margin_top_header {
+    margin-top: 20px;
+}
+
+
+button {
+    padding: 3px 6px;               
+    font-size: 1.5rem;   
+    font-family: cursive;               
+    color: rgb(0, 0, 0);                     
+    background-color: rgb(255, 255, 255);                             
+    border-radius: 20px; 
+    border: none;              
+    cursor: pointer;                 
+}
+
+button:hover {
+    color: rgb(147, 7, 7);
+}
+
+
+/* for contact page */
+
+.flex-container2 {
+    display: flex;
+    justify-content: flex-start;  
+    align-items: center;   
+    flex-direction: column;    
+    height: 100vh;             
+    width: 100%;               
+    background-color: #ffffff;
+    padding-top: 80px;
+}
+
+.flex-container3 { /*for name and email container */
+    display: flex;
+    width: 75%;
+    height: 10vh;  
+    justify-content: space-between;
+    align-content: center;   
+    position: relative;       
+    background-color: #ffffff;
+}
+
+.flex-container4 { /*for text of email container */
+    width: 75%;
+    height: 40vh;  
+    position: relative;
+    background-color: #ffffff;
+    display: flex;           
+    justify-content: center; 
+    align-items: center;
+}
+
+.container1 { /* name box */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 49%;  
+    height: auto;    
+    background-color: #ffffff;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    gap: 10px;
+}
+
+.container2 { /* email box */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 49%;  
+    height: auto;    
+    background-color: #ffffff;
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    gap: 10px;
+}
+
+.custom_inputNameArea {
+    width: 80%;
+    height: 50%;
+    font-size: clamp(15px, 1.4vw, 18px);
+    font-family: cursive;
+    margin-right: 5%;
+    padding: 5px;
+    padding-left: 5px;
+    outline: none;
+    border: 1px solid gray;   
+    border-radius: 20px;
+    resize: none;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    overflow-x: auto;
+}
+
+.custom_inputTextArea {
+    width: 98%;
+    height: 94%;
+    font-size: clamp(15px, 1.4vw, 18px);
+    font-family: cursive;
+    border-radius: 20px;
+    padding: 10px;
+    resize: none;
+    outline: none;
+    border-color: gray;
+    overflow-x: auto;
+}
+
+
+
+.container3 { /* text box */
+    width: 100%;
+    height: 100%;
+    max-width: calc(100% - 10px);  
+    max-height: calc(100% - 10px);
+    background-color: #ffffff;
+    border-color: #9e4444;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+
+/* Code for Modal/ pop-up windows */
+.my_modal {
+    display: none;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1000;
+
+}
+
+.my_modal_content {
+    background-color: #ffffff;
+    width: clamp(100px, 40%, 500px);
+    height: 20%;
+    text-align: center;
+    padding: 10px;
+    border: solid rgb(0, 0, 0) 2px;
+}
+
+.close_modal {
+    font-size: 1.24rem;   
+    font-family: cursive;               
+    color: rgb(0, 0, 0);                     
+    background-color: rgba(255, 255, 255, 0);                             
+    border: none;              
+    cursor: pointer;  
+    font-weight: bold;
+}
+
+.close_modal_hover {
+    color: rgb(147, 7, 7);
+}
+
+.home_header {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: clamp(40px, 5vw, 50px);
+}
+
+.home_button {
+    position: absolute;
+    width: clamp(20px, 10vw, 40px);
+    height: clamp(20px, 10vw, 40px);              
+    background-color: rgba(255, 255, 255, 0);                             
+    border: none;              
+    cursor: pointer;  
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    z-index: 2;
+}
+
+.home_button img {
+    width: 100%;
+    height: auto;
+}
+
+.shop_page {
+    background-image: url('Images/Art.jpeg');
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-color: #e8e7e8;
+    opacity: 0.8;
+    background-position: top; 
+}

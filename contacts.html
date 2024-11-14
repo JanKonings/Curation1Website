@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Contacts</title> 
+
+    
+    <link rel="stylesheet" href="app.css"> 
+
+</head>
+<body>
+    <button onclick="goHome()" class="home_button">
+        <!-- <img src="Images/Home_button.png"> -->
+        <!-- ≡ -->
+        <div class="home_header">≡</div>
+    </button>
+    <div class = "flex-container2">
+        <b><strong>Contacting:</strong></b>
+        
+        <h1> For inquiries, fill out the form below and we will get back to you within 48 hours.</h1>
+        <h2></h2>
+        <h2></h2>
+
+        <div class = "flex-container3">
+
+            <div class = "container1">
+                <h4>Name:</h4> 
+                <input type="text" class="custom_inputNameArea" id="name" autocomplete="name">
+            </div>
+
+            <div class = "container2">
+                <h4>Email:</h4> 
+                <input type="text" class="custom_inputNameArea" id="email" autocomplete="email">
+
+            </div>
+        </div>
+        <div class = "flex-container4">
+            <div class = "container3">
+                <textarea class = "custom_inputTextArea" placeholder="message" maxlength="1000" id = "text"></textarea>
+            </div>
+        </div>
+        <div class="margin_top_header"></div>
+        <button onclick="collectData()">Submit</button>
+    </div>
+
+    <!-- Modal for data pop_up -->
+    <div id="contactSuccess" class="my_modal">
+        <div class="my_modal_content">
+            <p>Success! Your Message has been recieved.</p>
+            <span id="closeSuccessModal" class="close_modal">&times;</span>
+        </div>
+    </div>
+    <div id="contactInvalid" class="my_modal">
+        <div class="my_modal_content">
+            <p>Please fill out all fields before submitting!</p>
+            <span id="closeInvalidModal" class="close_modal">&times;</span>
+        </div>
+    </div>
+    
+
+    <script src="app.js"></script>
+</body>
+</html>
