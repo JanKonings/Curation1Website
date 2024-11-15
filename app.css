@@ -239,5 +239,19 @@ button:hover {
     background-repeat: no-repeat;
     background-color: #e8e7e8;
     opacity: 0.8;
-    background-position: top; 
+    background-position: left; 
 }
+
+.shop_page_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5vh;
+}
+
+.comingSoonHeader {
+    font-family: cursive;
+    font-size: clamp(30px, 8vh, 40px);
+}
+
+
