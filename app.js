@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 document.addEventListener("DOMContentLoaded", function() {
     if (document.body.classList.contains('front_page')) {
         let images = [
@@ -106,3 +107,12 @@ function showModal_invalid() {
 function goHome() {
     window.location.href = "index.html";
 }
+=======
+function buyButton() {
+    alert("Succesfully Bought!")
+}
+
+function loveGiver() {
+    alert("I LOVE YOU")
+}
+>>>>>>> cfc75287f8f5ba9f3b67d79b611663d1c5ecdf1b
