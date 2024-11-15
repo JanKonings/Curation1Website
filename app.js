@@ -104,5 +104,5 @@ function showModal_invalid() {
 }
 
 function goHome() {
-    window.location.href = "curation1.html";
+    window.location.href = "index.html";
 }
