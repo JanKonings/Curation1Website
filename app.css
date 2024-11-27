@@ -1,6 +1,6 @@
 body {
     font-size: clamp(22px, 2vw, 40px);
-    font-family: cursive;
+    font-family: "Playwrite IS", cursive
 }
 
 html, body {
@@ -22,7 +22,7 @@ html, body {
 }
 
 .front_page_container img {
-    width: clamp(200px, 30%, 250px);            
+    width: clamp(150px, 30%, 250px);            
     height: auto;         
 }
 
@@ -30,15 +30,23 @@ h2 {
     margin-top: 0.5vh;  
 }
 
+VGH {
+    margin-top: 20px;
+}
+
 h3 {
     font-size: clamp(23px, 2vw, 40px);
-    font-family: cursive;
+    font-family: "Playwrite IS", cursive;
 }
 
 h1 {
     text-align: center;
-    font-size: clamp(14px, 1.4vw, 50px);
+    font-size: clamp(14px, 1.4vw, 20px);
+    text-indent: 20px;
+    padding-right: 20px;
+    font-family: "Playwrite IS", cursive;
 }
+
 
 h4 {
     margin-left: 0.5%;
@@ -49,11 +57,10 @@ h4 {
     margin-top: 20px;
 }
 
-
 button {
     padding: 3px 6px;               
-    font-size: 1.5rem;   
-    font-family: cursive;               
+    font-size: clamp(15px, 1.3rem, 25px);   
+    font-family: "Playwrite IS", cursive;              
     color: rgb(0, 0, 0);                     
     background-color: rgb(255, 255, 255);                             
     border-radius: 20px; 
@@ -83,6 +90,11 @@ button img {
     width: 100%;               
     background-color: #ffffff;
     padding-top: 80px;
+}
+
+.flex-container2 text {
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .flex-container3 { /*for name and email container */
@@ -135,7 +147,7 @@ button img {
     width: 80%;
     height: 50%;
     font-size: clamp(15px, 1.4vw, 18px);
-    font-family: cursive;
+    font-family: "Playwrite IS", cursive;
     margin-right: 5%;
     padding: 5px;
     padding-left: 5px;
@@ -153,7 +165,7 @@ button img {
     width: 98%;
     height: 94%;
     font-size: clamp(15px, 1.4vw, 18px);
-    font-family: cursive;
+    font-family: "Playwrite IS", cursive;
     border-radius: 20px;
     padding: 10px;
     resize: none;
@@ -203,7 +215,7 @@ button img {
 
 .close_modal {
     font-size: 1.24rem;   
-    font-family: cursive;               
+    font-family: "Playwrite IS", cursive;               
     color: rgb(0, 0, 0);                     
     background-color: rgba(255, 255, 255, 0);                             
     border: none;              
@@ -239,7 +251,7 @@ button img {
     background-size: auto 100%;
     background-repeat: no-repeat;
     background-color: #ffffff;
-    background-position: left; 
+    background-position: center; 
 }
 
 .shop_page_container {
@@ -250,7 +262,7 @@ button img {
 }
 
 .comingSoonHeader {
-    font-family: cursive;
+    font-family: "Playwrite IS", cursive;
     font-size: clamp(30px, 8vh, 40px);
 }
 
