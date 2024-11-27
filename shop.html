@@ -10,12 +10,26 @@
 </head>
 
 <body class="shop_page">
-    <button onclick="goHome()" class="home_button">
-        <div class="home_header">≡</div>
+    <button onclick="showModal_sidebar()" class="navigation_button">
+        <div class="navigation_header">≡</div>
     </button>
 
     <div class="shop_page_container">
         <div class="comingSoonHeader">Coming soon...</div>
+    </div>
+
+
+    <div class="navigation_modal" id="nav_modal">
+        <div class="navigation_modal_content">
+            <p>Test</p>
+
+            <button onclick="goHome()"></button>
+            <button onclick="goToShop()"></button>
+            <button onclick="goToContact()"></button>
+            <button onclick="goToAboutUs()"></button>
+
+            <span class="close_modal" id="close_nav_modal">&times;</span>
+        </div>
     </div>
 
     <script src="app.js"></script>

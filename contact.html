@@ -10,8 +10,8 @@
 
 </head>
 <body>
-    <button onclick="goHome()" class="home_button">
-        <div class="home_header">≡</div>
+    <button onclick="showModal_sidebar()" class="navigation_button">
+        <div class="navigation_header">≡</div>
     </button>
     <div class = "flex-container2">
         <b><strong>Contacting:</strong></b>
@@ -55,6 +55,13 @@
             <span id="closeInvalidModal" class="close_modal">&times;</span>
         </div>
     </div>
+    <div class="navigation_modal" id="nav_modal">
+        <div class="navigation_modal_content">
+            <p>Test</p>
+            <span id="close_nav_modal" class="close_modal">&times;</span>
+        </div>
+    </div>
+
     
 
     <script src="app.js"></script>

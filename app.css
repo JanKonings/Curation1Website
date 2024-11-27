@@ -209,12 +209,12 @@ button:hover {
     color: rgb(147, 7, 7);
 }
 
-.home_header {
+.navigation_header {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: clamp(40px, 5vw, 50px);
 }
 
-.home_button {
+.navigation_button {
     position: absolute;
     width: clamp(20px, 10vw, 40px);
     height: clamp(20px, 10vw, 40px);              
@@ -226,11 +226,6 @@ button:hover {
     justify-content: flex-start;
     align-items: flex-start;
     z-index: 2;
-}
-
-.home_button img {
-    width: 100%;
-    height: auto;
 }
 
 .shop_page {
@@ -254,7 +249,7 @@ button:hover {
     font-size: clamp(30px, 8vh, 40px);
 }
 
-.left_modal {
+.navigation_modal {
     display: none;
     position: fixed;
     align-items: flex-start;
@@ -267,10 +262,10 @@ button:hover {
     z-index: 1000;
 }
 
-.left_modal_content {
-    width: 30%;
+.navigation_modal_content {
+    width: clamp(200px, 20%, 400px);
     height: 100%;
-    background-color: #9e4444;
     text-align: center;
+    background-color: #ffffff;
     padding: 10px;
 }

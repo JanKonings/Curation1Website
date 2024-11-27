@@ -32,12 +32,16 @@ function goToShop() {
     window.location.href = "shop.html"
 }
 
-function goToContacts() {
-    window.location.href = "contacts.html"
+function goToContact() {
+    window.location.href = "contact.html"
 }
 
 function goToAboutUs() {
     window.location.href = "aboutUs.html"
+}
+
+function goHome() {
+    window.location.href = "index.html";
 }
 
 function collectData() {
@@ -103,6 +107,21 @@ function showModal_invalid() {
     };
 }
 
-function goHome() {
-    window.location.href = "index.html";
+function showModal_sidebar() {
+    const modal = document.getElementById('nav_modal');
+    modal.style.display = "flex";
+
+    const closeButton = document.getElementById('close_nav_modal');
+    closeButton.onclick = () => {
+        modal.style.display = "none";
+    };
+
+    window.onclick = (event) => {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    };
 }
+
+
+
