@@ -111,11 +111,6 @@ function showModal_sidebar() {
     const modal = document.getElementById('nav_modal');
     modal.style.display = "flex";
 
-    const closeButton = document.getElementById('close_nav_modal');
-    closeButton.onclick = () => {
-        modal.style.display = "none";
-    };
-
     window.onclick = (event) => {
         if (event.target === modal) {
             modal.style.display = "none";

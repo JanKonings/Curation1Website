@@ -13,9 +13,24 @@
 </head>
 
 <body>
-    <div class = "flex-container1">
-        <h3><b><strong>About Us:</strong></b></h3>
+    <button onclick="showModal_sidebar()" class="navigation_button">
+        <div class="navigation_header">≡</div>
+    </button>
 
+    <div class = "flex-container2">
+        <h3><b><strong>Coming soon...</strong></b></h3>
+
+    </div>
+
+    <div class="navigation_modal" id="nav_modal">
+        <div class="navigation_modal_content">
+            <button onclick="goHome()">
+                <img src="Images/curation1Logo.png">
+            </button>
+            <button onclick="goToShop()">Shop</button>
+            <button onclick="goToContact()">Contact</button>
+            <button onclick="goToAboutUs()">About Us</button>
+        </div>
     </div>
 
 </body>

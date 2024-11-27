@@ -58,11 +58,17 @@ button {
     background-color: rgb(255, 255, 255);                             
     border-radius: 20px; 
     border: none;              
-    cursor: pointer;                 
+    cursor: pointer;  
 }
 
 button:hover {
     color: rgb(147, 7, 7);
+}
+
+button img {
+    cursor: pointer;  
+    width: 100px;
+    height: auto;
 }
 
 
@@ -229,11 +235,10 @@ button:hover {
 }
 
 .shop_page {
-    background-image: url('Images/Art.jpeg');
+    background-image: url('Images/Art.png');
     background-size: auto 100%;
     background-repeat: no-repeat;
-    background-color: #e8e7e8;
-    opacity: 0.8;
+    background-color: #ffffff;
     background-position: left; 
 }
 
@@ -263,9 +268,21 @@ button:hover {
 }
 
 .navigation_modal_content {
-    width: clamp(200px, 20%, 400px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;  
+    align-items: center; 
+    width: clamp(150px, 15%, 500px);
+    margin-bottom: 10px;
     height: 100%;
-    text-align: center;
     background-color: #ffffff;
+    opacity: 1;
     padding: 10px;
+    padding-left: 10px;
+    border: solid rgb(137, 51, 51);
+    border-width: 5px;
+    background-image: url('Images/Art.png');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: bottom;
 }
